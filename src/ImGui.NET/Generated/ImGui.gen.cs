@@ -26400,7 +26400,7 @@ namespace ImGuiNET
                 native_fmt[native_fmt_offset] = 0;
             }
             else { native_fmt = null; }
-            ImGuiNative.igText(native_fmt);
+            ImGuiNative.igText(native_fmt,null);
             if (fmt_byteCount > Util.StackAllocationSizeLimit)
             {
                 Util.Free(native_fmt);
@@ -26427,7 +26427,7 @@ namespace ImGuiNET
                 native_fmt[native_fmt_offset] = 0;
             }
             else { native_fmt = null; }
-            ImGuiNative.igText(native_fmt);
+            ImGuiNative.igText(native_fmt,null);
             if (fmt_byteCount > Util.StackAllocationSizeLimit)
             {
                 Util.Free(native_fmt);

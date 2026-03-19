@@ -738,8 +738,8 @@ namespace ImGuiNET
         public static extern void igTableSetupColumn(byte* label, ImGuiTableColumnFlags flags, float init_width_or_weight, uint user_id);
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
         public static extern void igTableSetupScrollFreeze(int cols, int rows);
-        [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
-        public static extern void igText(byte* fmt);
+        [DllImport("cimgui",EntryPoint ="igTextV",CallingConvention = CallingConvention.Cdecl)]
+        public static extern void igText(byte* fmt, byte* args);
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
         public static extern void igTextColored(Vector4 col, byte* fmt);
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
