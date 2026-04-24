@@ -741,7 +741,7 @@ namespace ImGuiNET
         [DllImport("cimgui",EntryPoint ="igTextV",CallingConvention = CallingConvention.Cdecl)]
         public static extern void igText(byte* fmt, byte* args);
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
-        public static extern void igTextColored(Vector4 col, byte* fmt);
+        public static extern void igTextColoredV(Vector4 col, byte* fmt, byte* args);
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
         public static extern void igTextDisabled(byte* fmt);
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
